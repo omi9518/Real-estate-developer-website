@@ -1,3 +1,11 @@
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     color: rgb(249 249 249);
     font-size: 17px;
@@ -10,44 +18,11 @@
     padding: 15px;
 }
 
-
-.carousel-inner img {
-    height: 500px;
-    object-fit: contain; 
-    width: 100%;
-    background-color: #f8f9fa; 
-}
-.carousel-control-prev-icon {
-    background-color: #00000042;
-    padding: 25px;
-}
-.carousel-control-next-icon {
-    background-color: #00000042;
-    padding: 25px;
-}
-.carousel-caption-dev {
-    position: absolute;
-    top: -300px;
-    font-size: 23px;
-    font-weight: 400;
-    left: 160px;
+.heading{
+    background-color: #253b84;
+    color: white;
 }
 
-.progress-bar-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background-color: rgba(0, 0, 0, 0.2); /* Light gray background for the track */
-}
-
-.progress-bar {
-    width: 0%;
-    height: 100%;
-    background-color: #007bff; /* Blue progress bar */
-    transition: width 5s linear; /* Smooth progress animation */
-}
 .about-us-section {
     display: flex;
     align-items: center;
@@ -100,12 +75,12 @@
     line-height: 1.5;
 }
 ul{
-  padding: 0px;
-}
+    padding: 0px;
+  }
 
  ul > li{
     list-style-type: none;
-    padding-right: 10px;
+    padding: 0;
     
 }
 ul li a {
@@ -131,22 +106,43 @@ ul li a {
 }
 .rotate-icon {
     display: inline-block;
-    /* animation: rotate 2s infinite linear; */
     transform: rotate(45deg);
 }
-
 .outer-div-whoweare{
-  max-width: 1156px;
+    max-width: 1156px;
+  }
+
+.btn-readmore{
+    background-color: #253b84; 
+    width: 150px;
+    transition: all .3s;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.btn-readmore:hover{
+    width: 150px;
+    transform: scale(1.1);
+    background-color: #253b84;
+    color: #FFFFFF;
+    border-radius: 10px;
 }
 
-/* @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-} */
+.outer-div{
+    background-color: #253b84;
+}
+.outer-div{
+    color:#FFFFFF ;
+}
+.headline{
+    color: #253b84;
+    font-weight: 700;
+    font-size: 17px;
+    margin: 20px 0px;
+}
+.icon-colour{
+    color: #FFFFFF;
+}
+
 .btn-readmore{
     background-color: #253b84; 
     width: 150px;
@@ -269,33 +265,3 @@ ul li a {
   .outer-footer2{
     background-color: #253b84;
   }
-
-  #backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none; /* Initially hidden */
-    z-index: 1000;
-}
-  
-  @media (max-width: 768px) {
-    .email-container {
-      flex-direction: column;
-      width: 90%;
-    }
-  
-    .email-input {
-      border-radius: 50px;
-      border: 2px solid #2a2a74;
-      border-bottom: none;
-      width: 100%;
-      margin-bottom: 5px;
-    }
-  
-    .email-button {
-      border-radius: 50px;
-      border-top: none;
-      width: 100%;
-    }
-  }
-  

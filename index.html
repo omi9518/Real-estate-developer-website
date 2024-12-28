@@ -10,6 +10,24 @@
     <title>Mahalaxmi Developers</title>
     <link rel="stylesheet" href="Index.css">
     <script>
+         const backToTopButton = document.getElementById('backToTop');
+
+// Show the button when the user scrolls down
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+// Scroll to top when the button is clicked
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
         document.addEventListener("DOMContentLoaded", () => {
             const carousel = document.querySelector("#carouselExampleIndicators");
             const progressBar = document.querySelector(".progress-bar");
@@ -35,7 +53,7 @@
 </head>
 <body>
     <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <nav id="NavbarId" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="./images/logo-removebg-preview.png" alt="Mahalaxmi Developers" width="150">
@@ -49,7 +67,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item m-2">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="/AboutUs/AboutUs.html">About</a>
                         </li>
                         <li class="nav-item m-2">
                             <a class="nav-link" href="#">Projects</a>
@@ -120,7 +138,7 @@
                             <p><strong>Since our incorporation in 2012</strong>, We have undertaken challenging works that serve as a visual strategy 
                             in achieving our ultimate goal of contributing and creating new and innovative venture possibilities to establish a 
                             strong presence throughout Maharashtra.</p>
-                            <ul>
+                            <ul class="p-0">
                                 <li><i class="bi bi-chevron-double-right"></i> Produce high-quality work according to specified engineering standards.</li>
                                 <li><i class="bi bi-chevron-double-right"></i> Delivery best plots to our valued customers at best price and amenities.</li>
                                 <li><i class="bi bi-chevron-double-right"></i> Timely delivery of projects with compliance with safety requirements.</li>
@@ -176,8 +194,8 @@
                 </div>
             </div>
             <div class="container-fluid mb-5">
-                <div class="outer-div-whoweare w-100">
-                <div class="w-75 d-flex justify-content-between align-items-start mx-auto text-center py-5">
+                <div class="outer-div-whoweare mx-auto">
+                <div class="d-flex justify-content-between align-items-start text-center py-5">
                     <div class="mission d-flex flex-column justify-content-center align-items-center w-50">
                         <div class="icon-outer text-center">
                             <img class="icon-colour" src="/images/pencil-ruler-solid.svg" height="60px" width="60px" alt="" srcset="">
@@ -253,7 +271,7 @@
             <div class="text-center">
                 <button class="btn btn-readmore w-25">View More Project</button>
             </div>
-            <div class="container-fluid my-5">
+            <div class="container-fluid mt-5">
                 <div class="outer-footer1 d-flex justify-content-center align-items-center mx-auto">
                     <div class="list1 w-25">
                         <div class="logo1">
@@ -307,8 +325,11 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
-            
+            <button id="backToTop" class="btn btn-primary rounded-circle" title="Go to top">
+                <i class="bi bi-arrow-up"></i> 
+            </button>
         </section>
     </div>
 
