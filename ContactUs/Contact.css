@@ -1,0 +1,118 @@
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(249 249 249);
+    font-size: 17px;
+    font-weight: 500;
+}
+.nav-link.active {
+    background-color: #253b84;
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 15px;
+}
+.heading{
+    background-color: #253b84;
+    color: white;
+}
+
+ul{
+    padding: 0px;
+  }
+  
+ul > li{
+      list-style-type: none;
+      padding-right: 10px;
+      
+  }
+
+ul li a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      line-height: 30px;
+    }
+
+.submitbtn{
+        background-color: #253b84;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+    }
+.submitbtn:hover{
+        background-color: #344c9b;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+}
+.bi{
+        font-size: 25px;
+        color: #253B84;
+    }
+
+    .email-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px; /* Adjust the maximum width as needed */
+        margin: 20px auto;
+      }
+      
+      .email-input {
+        flex: 1;
+        padding: 11px;
+        border: 2px solid #2a2a74; /* Change color as needed */
+        border-right: none;
+        border-radius: 50px 0 0 50px;
+        outline: none;
+        font-size: 16px;
+      }
+      
+      .email-button {
+        padding: 0 20px;
+        background-color: #2a2a74; /* Change to your desired color */
+        border: 2px solid #2a2a74;
+        border-radius: 0 50px 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      .email-button i {
+        color: white;
+        font-size: 18px;
+        margin: 10px;
+      }
+    
+      .list2 h5, .list3 h5 {
+        color: #253b84;
+        font-weight: bold
+      }
+      .outer-footer1{
+        background-color:#a9a9a92e
+      }
+    
+      .outer-footer2{
+        background-color: #253b84;
+      }
+
+      .bi-facebook{
+        font-size: 20px;
+        border-radius: 160px;
+        background-color: #fff;
+        color: #2a2a74;
+        padding: 6px;
+      }
+      .bi-whatsapp{
+        font-size: 20px;
+        border-radius: 160px;
+        background-color: #fff;
+        color: #32bbff;
+        padding: 6px;
+      }
+    .bi-instagram{
+      font-size: 20px;
+      border-radius: 160px;
+      background-color: #fff;
+      padding: 6px;
+    }

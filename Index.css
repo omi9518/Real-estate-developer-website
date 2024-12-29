@@ -99,6 +99,7 @@
 .about-us-text p {
     line-height: 1.5;
 }
+
 ul{
   padding: 0px;
 }
@@ -111,7 +112,8 @@ ul{
 ul li a {
     text-decoration: none;
     color: inherit;
-    font-weight: bold;
+    font-weight: 600;
+    line-height: 30px;
   }
 
 .about-us-text ul li {
@@ -265,11 +267,34 @@ ul li a {
     color: #253b84;
     font-weight: bold
   }
+  .outer-footer1{
+    background-color:#a9a9a92e
+  }
 
   .outer-footer2{
     background-color: #253b84;
   }
 
+  .bi-facebook{
+    font-size: 20px;
+    border-radius: 160px;
+    background-color: #fff;
+    color: #2a2a74;
+    padding: 6px;
+  }
+  .bi-whatsapp{
+    font-size: 20px;
+    border-radius: 160px;
+    background-color: #fff;
+    color: #32bbff;
+    padding: 6px;
+  }
+.bi-instagram{
+  font-size: 20px;
+  border-radius: 160px;
+  background-color: #fff;
+  padding: 6px;
+}
   #backToTop {
     position: fixed;
     bottom: 20px;
